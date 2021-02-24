@@ -16,19 +16,18 @@
             padding:0;
         }
         .body{
-            max-width:640px;
+            width:100vw;
+            height:100vh;
             margin:0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
 
 <div class="body">
-
-    <div style="text-align: center;padding:10px;display: none;">
-        <p>欢迎添加客服微信</p>
-    </div>
-
     <div>
         <img id="qrcode" src=""  style="width:100%;display: block;"/>
     </div>
@@ -62,11 +61,17 @@
     return prize.src;
   }
   var list = [{
-    src: 'hyq.png',
-    weight: 50,
+    src: 'imgs/qiaoba.png',
+    weight: 25,
   }, {
-    src: 'llj.png',
-    weight: 50,
+    src: 'imgs/buaoye.png',
+    weight: 25,
+  }, {
+    src: 'imgs/chenwenlong.png',
+    weight: 25,
+  }, {
+    src: 'imgs/jiangpeiyu.png',
+    weight: 25,
   }];
 
   var src = selectQrcode(list);
